@@ -1,0 +1,477 @@
+{
+	"info": {
+		"_postman_id": "fe440670-8b8a-4a87-adc8-9deb838163b5",
+		"name": "ClubNautico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35239084"
+	},
+	"item": [
+		{
+			"name": "Socio",
+			"item": [
+				{
+					"name": "Find All Socios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/findAllSocios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"findAllSocios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Socio By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/findById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"findById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Socio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"35824118Y\",\r\n    \"nombre\": \"Maria\",\r\n    \"apellidos\": \"Manzanares\",\r\n    \"num_telef\": \"622567633\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/createSocio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"createSocio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Socio",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"35824118Y\",\r\n    \"nombre\": \"Maria\",\r\n    \"apellidos\": \"Magdalena\",\r\n    \"num_telef\": \"622567633\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/updateSocio/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"updateSocio",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Socio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/deleteSocio/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"deleteSocio",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Barco",
+			"item": [
+				{
+					"name": "Find All Barcos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/findAllBarcos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"findAllBarcos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Barco By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/findBarcoById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"findBarcoById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Barco Para Un Socio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"matricula\" : \"RT3456R\",\r\n    \"nombre\" : \"Caprichosa\",\r\n    \"num_amarre\" : \"34\",\r\n    \"cuota\" : \"120\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/createBarco/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"createBarco",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Barco",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/updateBarco/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"updateBarco",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Barco",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/deleteBarco/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"deleteBarco",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patron",
+			"item": [
+				{
+					"name": "Find All Patrones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/findAllPatrones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"findAllPatrones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Patron By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/findParonById/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"findParonById",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Patron",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Alfonso\",\r\n    \"apellidos\": \"Vicaria\",\r\n    \"dni\": \"34579821R\",\r\n    \"salidas\": [\r\n        {\r\n        \"id\": 1\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/createPatron",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"createPatron"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Patron",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/updatePatron/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"updatePatron",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Patron",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/deletePatron/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"deletePatron",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Salida",
+			"item": [
+				{
+					"name": "Find All Salidas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/salidas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"salidas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Salida By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/salidas/findSalidaById/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"salidas",
+								"findSalidaById",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Salida",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha_hora\": \"2024-05-31T12:00:00\",\r\n    \"destino\": \"Sevilla\",\r\n    \"patron\": {\r\n        \"id_patron\": 1\r\n    },\r\n    \"barco\": {\r\n        \"id_barco\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/salidas/createSalida",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"salidas",
+								"createSalida"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Salida",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/salidas/updateSalida/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"salidas",
+								"updateSalida",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Salida",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/salidas/deleteSalida/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"salidas",
+								"deleteSalida",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
